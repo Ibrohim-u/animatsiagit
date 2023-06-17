@@ -5,15 +5,116 @@
 }
 
 body {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(./wallhaven-p8j79j.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
-body .sun {
+body .solarsystem {
   width: 1440px;
   height: 1440px;
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  animation-name: sayora;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+body .solarsystem .sun {
+  width: 100px;
+  height: 100px;
+  animation-name: sayora;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+body .solarsystem .mercury {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 660px;
+  top: 800px;
+  animation-name: sayora;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+body .solarsystem .venera {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 850px;
+  top: 700px;
+  animation-name: sayora;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+body .solarsystem .yer {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 580px;
+  top: 600px;
+  animation-name: sayora;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+body .solarsystem .mars {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 840px;
+  top: 600px;
+  animation-name: sayora;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.jupiter {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 680px;
+  top: 400px;
+  animation-name: sayora;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.saturn {
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  right: 750px;
+  top: 850px;
+}
+
+.neptun {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 850px;
+  top: 900px;
+  animation-name: sayora;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes sayora {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=space.css.map */
